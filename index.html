@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" name="" placeholder="Create password" id="password" readonly>
+                <div class="icon">
+                    <i class="fa-solid fa-rotate-right" id="return" onclick="genPassword()"></i>
+                </div>
+        </div>
+        <span id="test">Zeif</span>
+        
+        <button id="copy_btn" onclick="copyPassword()">COPY PASSWORD</button>
+    </div>
+
+
+    <div class="range">
+        <div class="range-text">
+            <span>Password length:</span>
+        <h5 id="count"></h5>
+        </div>
+        <button id="azalt">-</button>
+        <input type="range" id="range" min="0" max="50" value="0">
+        <button id="coxalt">+</button>
+    </div>
+
+    <div class="box">
+        <label>
+            <input type="checkbox" id="uppercase"  />
+         ABC
+          </label>
+          <label>
+            <input type="checkbox" id="lowercase" />
+           abc
+          </label>
+          <label>
+            <input type="checkbox" id="numbers"  />
+           123
+          </label>
+          <label>
+            <input type="checkbox" id="symbols"  />
+           $%^&
+          </label>
+          
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
